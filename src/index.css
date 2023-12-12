@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.headerbg {
+  background: url("https://i.ibb.co/GTMXWgQ/React-Background-blur.jpg"),
+    linear-gradient(to left, #07070757, #0202026e);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
