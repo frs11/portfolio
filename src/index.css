@@ -15,3 +15,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.layoutbg {
+  background: url("https://i.ibb.co/GTMXWgQ/React-Background-blur.jpg"),
+    linear-gradient(to left, #07070757, #0202026e);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}

@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi";
 const DownloadResumeButton = () => {
   const handleDownload = () => {
     const googleDriveLink =
-      "https://drive.google.com/uc?export=download&id=1L2m9hV6qdfUzY0NZalm8_uM8w9b6K4rW";
+      "https://drive.google.com/uc?export=download&id=1LvFe6vmmpvMkI-7Tzq77u-79HtcJFwRB";
 
     const link = document.createElement("a");
     link.href = googleDriveLink;
@@ -15,11 +15,11 @@ const DownloadResumeButton = () => {
 
   return (
     <button
-      className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-400 text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white px-3 py-2"
+      className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-500 text-sm md:text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white md:px-3 px-2 py-1 md:py-2"
       onClick={handleDownload}
     >
       <FiDownload className="mr-2"></FiDownload>
-      Download Resume
+      <span className="hidden md:flex mr-1">Download </span> Resume
     </button>
   );
 };

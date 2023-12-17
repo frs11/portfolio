@@ -4,16 +4,16 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const links = (
     <>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-slate-800 hover:text-white hover:border-cyan-100 duration-100 ease-in-out">
+      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
         Home
       </h1>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-slate-800 hover:text-white hover:border-cyan-100 duration-100 ease-in-out">
+      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
         About
       </h1>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-slate-800 hover:text-white hover:border-cyan-100 duration-100 ease-in-out">
+      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
         Projects
       </h1>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-slate-800 hover:text-white hover:border-cyan-100 duration-100 ease-in-out">
+      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
         Contact
       </h1>
     </>

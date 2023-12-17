@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 
 const Home = () => {
   return (
-    <div className="lg:max-w-[1800px] mx-auto">
+    <div className="lg:max-w-[1800px] layoutbg mx-auto">
       <Navbar></Navbar>
       <Banner></Banner>
       {/* <DownloadResumeButton></DownloadResumeButton> */}
