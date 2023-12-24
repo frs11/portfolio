@@ -4,38 +4,62 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const links = (
     <>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
+      <a
+        href="#home"
+        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      >
         Home
-      </h1>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
+      </a>
+      <a
+        href="#about"
+        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      >
         About
-      </h1>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
+      </a>
+      <a
+        href="#projects"
+        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      >
         Projects
-      </h1>
-      <h1 className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out">
+      </a>
+      <a
+        href="#contact"
+        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      >
         Contact
-      </h1>
+      </a>
     </>
   );
   const dropdownLinks = (
     <>
-      <h1 className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out">
+      <a
+        href="#home"
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      >
         Home
-      </h1>
-      <h1 className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out">
+      </a>
+      <a
+        href="#about"
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      >
         About
-      </h1>
-      <h1 className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out">
+      </a>
+      <a
+        href="#projects"
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      >
         Projects
-      </h1>
-      <h1 className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out">
+      </a>
+      <a
+        href="#contact"
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      >
         Contact
-      </h1>
+      </a>
     </>
   );
   return (
-    <div className="navbar shadow-lg w-full bg-slate-800 md:px-12 mx-auto">
+    <div className="navbar shadow-lg w-full sticky top-0 bg-opacity-70 bg-slate-900 md:px-12 mx-auto">
       <div className="navbar-start">
         <div>
           <span className="flex items-center">

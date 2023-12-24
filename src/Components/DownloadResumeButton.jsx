@@ -15,7 +15,7 @@ const DownloadResumeButton = () => {
 
   return (
     <button
-      className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-500 text-sm md:text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white md:px-3 px-2 py-1 md:py-2"
+      className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-500 text-base md:text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white px-3 py-1 md:py-2"
       onClick={handleDownload}
     >
       <FiDownload className="mr-2"></FiDownload>
