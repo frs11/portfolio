@@ -1,61 +1,80 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   const links = (
     <>
-      <a
-        href="#home"
-        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        className="rounded-lg cursor-pointer px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
       >
         Home
-      </a>
-      <a
-        href="#about"
-        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      </Link>
+      <Link
+        to="about"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 cursor-pointer hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
       >
         About
-      </a>
-      <a
-        href="#projects"
-        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      </Link>
+      <Link
+        to="projects"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 hover:border-b-2 cursor-pointer border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
       >
         Projects
-      </a>
-      <a
-        href="#contact"
-        className="rounded-lg px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      </Link>
+      <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 hover:border-b-2 border-b-2 cursor-pointer border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
       >
         Contact
-      </a>
+      </Link>
     </>
   );
   const dropdownLinks = (
     <>
-      <a
-        href="#home"
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      <Link
+        to="home"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out"
       >
         Home
-      </a>
-      <a
-        href="#about"
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      </Link>
+      <Link
+        to="about"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
       >
         About
-      </a>
-      <a
-        href="#projects"
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      </Link>
+      <Link
+        to="projects"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
       >
         Projects
-      </a>
-      <a
-        href="#contact"
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out"
+      </Link>
+      <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
       >
         Contact
-      </a>
+      </Link>
     </>
   );
   return (

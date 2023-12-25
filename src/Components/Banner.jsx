@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 /* eslint-disable react/no-unescaped-entities */
 const Banner = () => {
   return (
-    <div className="headerbg flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]">
+    <div className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]">
       <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto px-4 md:px-0 py-5 md:py-6 lg:py-10 text-slate-100">
         <div className="px-2 md:px-8 lg:px-20">
           <p>Hi, I'm</p>

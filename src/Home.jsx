@@ -4,7 +4,7 @@ import Navbar from "./Components/Navbar";
 
 const Home = () => {
   return (
-    <div className="lg:max-w-[1800px] relative layoutbg mx-auto">
+    <div id="home" className="lg:max-w-[1800px] relative layoutbg mx-auto">
       <Navbar></Navbar>
       <Banner></Banner>
       <About></About>

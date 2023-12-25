@@ -1,11 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import { TypeAnimation } from "react-type-animation";
+import { FiPhoneCall } from "react-icons/fi";
+import { Link } from "react-scroll";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="headerbg flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]"
+      className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]"
     >
       <div className="w-3/4 py-5 md:py-0 md:w-1/2 h-full mx-auto">
         <img
@@ -21,31 +22,20 @@ const About = () => {
             About Me
           </p>
           <p className="my-5 md:mb-7 text-sm md:text-base text-slate-300 font-light">
-            I'm a MERN Stack Developer who enjoys learning new technologies and
-            writing JavaScript code. With expertise in React.js, Node.js,
-            Express.js, and MongoDB, I'm passionate about developing scalable
-            web applications. I'm constantly searching for fresh challenges and
-            chances to progress as a developer.
+            Passionate junior front-end developer adept at turning concepts into
+            captivating digital interfaces. I thrive on staying at the forefront
+            of tech trends. Eager to collaborate on groundbreaking projects and
+            contribute to the evolving landscape of web development.
           </p>
-          <p className="text-sm md:text-base text-slate-300 font-light">
-            I have completed
+          <p className="text-sm md:text-base mb-3 text-slate-300 font-light">
+            Connect with me
           </p>
-          <TypeAnimation
-            className="font-Rajdhani my-2 md:my-4 text-cyan-400 text-lg lg:text-lg"
-            sequence={[
-              // Same substring at the start will only be typed once, initially
-              "a Junior Font-end Developer",
-              1000,
-              "a Junior React Developer",
-              1000,
-              "a Junior MERN-stack Developer",
-              1000,
-              "an Undergraduate CSE Student",
-              1000,
-            ]}
-            speed={50}
-            repeat={Infinity}
-          ></TypeAnimation>
+          <Link to="contact" spy={true} smooth={true}>
+            <button className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-500 text-base md:text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white px-3 py-1 md:py-2">
+              <FiPhoneCall className="mr-2"></FiPhoneCall>
+              Connect
+            </button>
+          </Link>
         </div>
       </div>
     </div>
