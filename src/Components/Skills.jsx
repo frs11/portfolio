@@ -63,10 +63,10 @@ const Skills = () => {
         {Skills.map((skill, idx) => (
           <div
             key={idx}
-            className="w-20 h-20 px-2 py-2 m-4 border border-cyan-600 rounded-md"
+            className="w-20 h-20 px-2 py-2 m-4 border text-cyan-500 hover:text-cyan-300 border-cyan-600 hover:border-cyan-400 rounded-md"
           >
             <img className="w-full h-full" src={skill.logo} alt="" />
-            <p className="mt-2 text-sm lg:text-base text-cyan-500 text-center">
+            <p className="mt-2 text-sm lg:text-base text-center">
               {skill.title}
             </p>
           </div>
