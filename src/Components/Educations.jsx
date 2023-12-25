@@ -6,7 +6,9 @@ const Educations = () => {
           Educations
         </span>
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 w-10/12 lg:w-full lg:grid-cols-3 mx-auto py-4 bg-opacity-40 rounded-lg bg-slate-950">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 w-10/12 lg:w-full lg:grid-cols-3 mx-auto py-8 bg-opacity-40 rounded-lg bg-slate-950">
+        {/* University */}
         <div className="px-5">
           <p className="text-center text-cyan-200 border-b border-b-cyan-400 text-lg">
             University
@@ -15,16 +17,16 @@ const Educations = () => {
             <p className="font-medium">
               Name:{" "}
               <span className="font-light text-cyan-200">
-                Bangladesh University of Business & Technology
+                Bangladesh University of Business & Technology, Dhaka
               </span>
             </p>
-            <p className="font-medium">
+            <p className="font-medium my-1">
               Degree:{" "}
               <span className="font-light text-cyan-200">
                 Bachelor of Science (BSc)
               </span>
             </p>
-            <p className="font-medium">
+            <p className="font-medium mb-1">
               Subject:{" "}
               <span className="font-light text-cyan-200">
                 Computer Science and Engineering(CSE)
@@ -36,6 +38,7 @@ const Educations = () => {
             </p>
           </div>
         </div>
+
         {/* College */}
         <div className="border-x border-cyan-500 px-4">
           <div>
@@ -46,16 +49,16 @@ const Educations = () => {
               <p className="font-medium">
                 Name:{" "}
                 <span className="font-light text-cyan-200">
-                  Khan Bahadur Awlad Hossain Khan College
+                  Khan Bahadur Awlad Hossain Khan College, Manikganj
                 </span>
               </p>
-              <p className="font-medium">
+              <p className="font-medium my-1">
                 Degree:{" "}
                 <span className="font-light text-cyan-200">
                   Higher Secondery Certificate (HSC)
                 </span>
               </p>
-              <p className="font-medium">
+              <p className="font-medium mb-1">
                 Subject:{" "}
                 <span className="font-light text-cyan-200">Science</span>
               </p>
@@ -66,6 +69,8 @@ const Educations = () => {
             </div>
           </div>
         </div>
+
+        {/* School */}
         <div>
           <div className="px-5">
             <p className="text-center text-cyan-200 border-b border-b-cyan-400 text-lg">
@@ -75,16 +80,16 @@ const Educations = () => {
               <p className="font-medium">
                 Name:{" "}
                 <span className="font-light text-cyan-200">
-                  Manikganj Islamia Kamil Madrasah
+                  Manikganj Islamia Kamil Madrasah, Manikganj
                 </span>
               </p>
-              <p className="font-medium">
+              <p className="font-medium my-1">
                 Degree:{" "}
                 <span className="font-light text-cyan-200">
                   Secondery School Certificate (SSC)
                 </span>
               </p>
-              <p className="font-medium">
+              <p className="font-medium mb-1">
                 Subject:{" "}
                 <span className="font-light text-cyan-200">General</span>
               </p>
