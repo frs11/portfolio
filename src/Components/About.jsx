@@ -8,9 +8,9 @@ const About = () => {
       id="about"
       className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]"
     >
-      <div className="w-3/4 py-5 md:py-0 md:w-1/2 h-full mx-auto">
+      <div className="w-3/4 py-5 px-5 md:py-0 md:w-1/2 h-full mx-auto">
         <img
-          className="h-full mb-0 mx-auto"
+          className="h-full mb-0 mx-auto border-2 rounded-full border-cyan-300"
           // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
           src="https://i.ibb.co/nsZmQhR/Portfolio-Image-1.png"
           alt="Image"
@@ -18,8 +18,10 @@ const About = () => {
       </div>
       <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto px-4 md:px-0 py-5 md:py-6 lg:py-10 text-slate-100">
         <div className="px-2 md:px-8 lg:px-20">
-          <p className="text-2xl md:text-3xl my-2 md:my-4 font-Orbitron font-medium text-cyan-300">
-            About Me
+          <p className="text-2xl md:text-4xl my-2 md:my-4 font-Orbitron font-medium text-cyan-300">
+            <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
+              About Me
+            </span>
           </p>
           <p className="my-5 md:mb-7 text-sm md:text-base text-slate-300 font-light">
             Passionate junior front-end developer adept at turning concepts into

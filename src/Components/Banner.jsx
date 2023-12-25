@@ -40,7 +40,7 @@ const Banner = () => {
       </div>
       <div className="w-3/4 py-5 md:py-0 md:w-1/2 h-full mx-auto">
         <img
-          className="h-full mb-0 mx-auto"
+          className="h-full border-2 border-cyan-300 rounded-full mb-0 mx-auto"
           // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
           src="https://i.ibb.co/SJgncwg/Portfolio-Image.png"
           alt="Image"

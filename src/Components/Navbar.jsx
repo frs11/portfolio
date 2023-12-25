@@ -24,6 +24,14 @@ const Navbar = () => {
         About
       </Link>
       <Link
+        to="skills"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 cursor-pointer hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
+      >
+        Skills
+      </Link>
+      <Link
         to="projects"
         spy={true}
         smooth={true}
@@ -58,6 +66,14 @@ const Navbar = () => {
         className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
       >
         About
+      </Link>
+      <Link
+        to="skills"
+        spy={true}
+        smooth={true}
+        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
+      >
+        Skills
       </Link>
       <Link
         to="projects"
