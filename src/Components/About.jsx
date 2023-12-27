@@ -33,7 +33,7 @@ const About = () => {
             Connect with me
           </p>
           <Link to="contact" spy={true} smooth={true}>
-            <button className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-500 text-base md:text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white px-3 py-1 md:py-2">
+            <button className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-400 hover:bg-opacity-60 text-base md:text-lg font-Rajdhani font-semibold  duration-150 ease-in-out text-white px-3 py-1 md:py-2">
               <FiPhoneCall className="mr-2"></FiPhoneCall>
               Connect
             </button>

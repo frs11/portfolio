@@ -53,12 +53,14 @@ const Navbar = () => {
     <div className="navbar shadow-lg w-full sticky top-0 z-50 bg-opacity-70 bg-slate-900 md:px-12 mx-auto">
       <div className="navbar-start">
         <div>
-          <span className="flex items-center">
-            <img
-              className="w-12"
-              src="https://i.ibb.co/5R5LR93/Logo-1.png"
-              alt=""
-            />
+          <span className="flex items-center cursor-pointer">
+            <Link to="home" spy={true} smooth={true}>
+              <img
+                className="w-12"
+                src="https://i.ibb.co/5R5LR93/Logo-1.png"
+                alt=""
+              />
+            </Link>
           </span>
         </div>
       </div>
