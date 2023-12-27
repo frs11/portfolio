@@ -23,7 +23,7 @@ const About = () => {
               About Me
             </span>
           </p>
-          <p className="my-5 md:mb-7 text-sm md:text-base text-slate-300 font-light">
+          <p className="my-5 md:mb-8 text-sm md:text-base text-slate-300 font-light">
             Passionate junior front-end developer adept at turning concepts into
             captivating digital interfaces. I thrive on staying at the forefront
             of tech trends. Eager to collaborate on groundbreaking projects and
