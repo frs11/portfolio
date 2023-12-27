@@ -5,46 +5,27 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const linksStyles =
+    "rounded-lg cursor-pointer px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out";
+
+  const dropdownLinksStyles =
+    "rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out";
+
   const links = (
     <>
-      <Link
-        to="home"
-        spy={true}
-        smooth={true}
-        className="rounded-lg cursor-pointer px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
-      >
+      <Link to="home" spy={true} smooth={true} className="">
         Home
       </Link>
-      <Link
-        to="about"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 cursor-pointer hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
-      >
+      <Link to="about" spy={true} smooth={true} className={linksStyles}>
         About
       </Link>
-      <Link
-        to="skills"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 cursor-pointer hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
-      >
+      <Link to="skills" spy={true} smooth={true} className={linksStyles}>
         Skills
       </Link>
-      <Link
-        to="projects"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 hover:border-b-2 cursor-pointer border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
-      >
+      <Link to="projects" spy={true} smooth={true} className={linksStyles}>
         Projects
       </Link>
-      <Link
-        to="contact"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 hover:border-b-2 border-b-2 cursor-pointer border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out"
-      >
+      <Link to="contact" spy={true} smooth={true} className={linksStyles}>
         Contact
       </Link>
     </>
@@ -52,34 +33,24 @@ const Navbar = () => {
   const dropdownLinks = (
     <>
       <Link to="home" spy={true} smooth={true}>
-        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
-          Home
-        </p>
+        <p className={dropdownLinksStyles}>Home</p>
       </Link>
       <Link to="about" spy={true} smooth={true}>
-        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
-          About
-        </p>
+        <p className={dropdownLinksStyles}>About</p>
       </Link>
       <Link to="skills" spy={true} smooth={true}>
-        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
-          Skills
-        </p>
+        <p className={dropdownLinksStyles}>Skills</p>
       </Link>
       <Link to="projects" spy={true} smooth={true}>
-        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
-          Projects
-        </p>
+        <p className={dropdownLinksStyles}>Projects</p>
       </Link>
       <Link to="contact" spy={true} smooth={true}>
-        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
-          Contact
-        </p>
+        <p className={dropdownLinksStyles}>Contact</p>
       </Link>
     </>
   );
   return (
-    <div className="navbar shadow-lg w-full sticky top-0 bg-opacity-70 bg-slate-900 md:px-12 mx-auto">
+    <div className="navbar shadow-lg w-full sticky top-0 z-50 bg-opacity-70 bg-slate-900 md:px-12 mx-auto">
       <div className="navbar-start">
         <div>
           <span className="flex items-center">
