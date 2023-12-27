@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const links = (
     <>
-      <Link to="home" spy={true} smooth={true} className="">
+      <Link to="home" spy={true} smooth={true} className={linksStyles}>
         Home
       </Link>
       <Link to="about" spy={true} smooth={true} className={linksStyles}>

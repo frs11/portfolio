@@ -4,7 +4,7 @@ import jslogo from "../assets/Skills icons/icons8-javascript.svg";
 import reactlogo from "../assets/Skills icons/reactjs.png";
 import tailwindlogo from "../assets/Skills icons/icons8-tailwind-css.svg";
 import nodelogo from "../assets/Skills icons/nodejs.png";
-import expresslogo from "../assets/Skills icons/icons8-express-js.svg";
+import expresslogo from "../assets/Skills icons/express with bg.png";
 import mongologo from "../assets/Skills icons/mongpdb.png";
 import firebaselogo from "../assets/Skills icons/firebase.png";
 import jwtlogo from "../assets/Skills icons/icons8-jwt.svg";
@@ -63,7 +63,7 @@ const Skills = () => {
         {Skills.map((skill, idx) => (
           <div
             key={idx}
-            className="w-20 h-20 px-2 py-2 m-4 border text-cyan-500 hover:text-cyan-300 border-cyan-600 hover:border-cyan-400 rounded-md"
+            className="w-20 h-20 hover:w-24 hover:h-24 px-2 py-2 m-4 hover:m-0 hover:mx-2 duration-150 ease-in-out border bg-cyan-900 bg-opacity-20 text-cyan-500 hover:text-cyan-300 border-cyan-600 hover:border-cyan-400 rounded-md"
           >
             <img className="w-full h-full" src={skill.logo} alt="" />
             <p className="mt-2 text-sm lg:text-base text-center">
