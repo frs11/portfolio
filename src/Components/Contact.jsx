@@ -11,8 +11,10 @@ const Contact = () => {
           Contact
         </span>
       </p>
-      <div className="w-1/2 mx-auto bg-slate-600 bg-opacity-40 px-5 py-4 rounded-lg text-center">
-        <p className="text-3xl text-slate-200">Let's stay connected </p>
+      <div className="w-5/6 md:w-1/2 mx-auto bg-slate-600 bg-opacity-40 px-5 py-4 rounded-lg text-center">
+        <p className="text-xl md:text-3xl text-slate-200">
+          Let's stay connected{" "}
+        </p>
         <div className="flex justify-center my-5 space-x-2 text-center">
           <a
             href="https://github.com/frs11"

@@ -40,7 +40,7 @@ const Educations = () => {
         </div>
 
         {/* College */}
-        <div className="border-x border-cyan-500 px-4">
+        <div className="lg:border-x border-cyan-500 px-4">
           <div>
             <p className="text-center text-cyan-200 border-b border-b-cyan-400 text-lg">
               College

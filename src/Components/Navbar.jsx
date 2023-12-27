@@ -51,45 +51,30 @@ const Navbar = () => {
   );
   const dropdownLinks = (
     <>
-      <Link
-        to="home"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out"
-      >
-        Home
+      <Link to="home" spy={true} smooth={true}>
+        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
+          Home
+        </p>
       </Link>
-      <Link
-        to="about"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
-      >
-        About
+      <Link to="about" spy={true} smooth={true}>
+        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
+          About
+        </p>
       </Link>
-      <Link
-        to="skills"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
-      >
-        Skills
+      <Link to="skills" spy={true} smooth={true}>
+        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
+          Skills
+        </p>
       </Link>
-      <Link
-        to="projects"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
-      >
-        Projects
+      <Link to="projects" spy={true} smooth={true}>
+        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
+          Projects
+        </p>
       </Link>
-      <Link
-        to="contact"
-        spy={true}
-        smooth={true}
-        className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 hover:border-cyan-100 duration-100 ease-in-out cursor-pointer"
-      >
-        Contact
+      <Link to="contact" spy={true} smooth={true}>
+        <p className="rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out">
+          Contact
+        </p>
       </Link>
     </>
   );
@@ -131,9 +116,9 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className={` dropdown-content mt-3 p-2 z-[1] ${
+            className={` dropdown-content mt-3 p-2 z-50 ${
               open ? "" : "hidden"
-            } shadow bg-base-100 rounded-lg w-[120px]`}
+            } shadow bg-base-100 rounded-lg w-[150px]`}
           >
             {dropdownLinks}
           </ul>
