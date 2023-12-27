@@ -1,4 +1,22 @@
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
+
 const Educations = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 150,
+    });
+    AOS.init({
+      startEvent: "onReveal",
+    });
+    AOS.refresh();
+
+    return AOS.refreshHard();
+  }, []);
+
   return (
     <div className="w-11/12 md:w-10/12 pt-10 mx-auto">
       <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
@@ -9,7 +27,7 @@ const Educations = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 w-10/12 lg:w-full lg:grid-cols-3 mx-auto py-8 bg-opacity-40 rounded-lg bg-slate-950">
         {/* University */}
-        <div className="px-5">
+        <div className="px-5" data-aos="zoom-in">
           <p className="text-center text-cyan-200 border-b border-b-cyan-400 text-lg">
             University
           </p>
@@ -40,7 +58,7 @@ const Educations = () => {
         </div>
 
         {/* College */}
-        <div className="lg:border-x border-cyan-500 px-4">
+        <div className="lg:border-x border-cyan-500 px-4" data-aos="fade-up">
           <div>
             <p className="text-center text-cyan-200 border-b border-b-cyan-400 text-lg">
               College
@@ -72,7 +90,7 @@ const Educations = () => {
 
         {/* School */}
         <div>
-          <div className="px-5">
+          <div className="px-5" data-aos="zoom-in">
             <p className="text-center text-cyan-200 border-b border-b-cyan-400 text-lg">
               School
             </p>

@@ -1,8 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FiPhoneCall } from "react-icons/fi";
 import { Link } from "react-scroll";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 150,
+    });
+    AOS.init({
+      startEvent: "onReveal",
+    });
+    AOS.refresh();
+
+    return AOS.refreshHard();
+  }, []);
   return (
     <div
       id="about"
@@ -10,6 +26,7 @@ const About = () => {
     >
       <div className="w-3/4 py-5 px-5 md:py-0 md:w-1/2 h-full mx-auto">
         <img
+          data-aos="zoom-in-up"
           className="h-full mb-0 mx-auto border-2 rounded-full border-cyan-300"
           // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
           src="https://i.ibb.co/nsZmQhR/Portfolio-Image-1.png"
@@ -23,7 +40,10 @@ const About = () => {
               About Me
             </span>
           </p>
-          <p className="my-5 md:mb-8 text-sm md:text-base text-slate-300 font-light">
+          <p
+            data-aos="flip-up"
+            className="my-5 md:mb-8 text-sm md:text-base text-slate-300 font-light"
+          >
             Passionate junior front-end developer adept at turning concepts into
             captivating digital interfaces. I thrive on staying at the forefront
             of tech trends. Eager to collaborate on groundbreaking projects and

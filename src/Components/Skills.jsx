@@ -8,6 +8,10 @@ import expresslogo from "../assets/Skills icons/express with bg.png";
 import mongologo from "../assets/Skills icons/mongpdb.png";
 import firebaselogo from "../assets/Skills icons/firebase.png";
 import jwtlogo from "../assets/Skills icons/icons8-jwt.svg";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
+
 const Skills = () => {
   const Skills = [
     {
@@ -51,6 +55,20 @@ const Skills = () => {
       title: "JWT",
     },
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 150,
+    });
+    AOS.init({
+      startEvent: "onReveal",
+    });
+    AOS.refresh();
+
+    return AOS.refreshHard();
+  }, []);
+
   return (
     <div id="skills" className="w-11/12 md:w-10/12 py-20 mx-auto">
       <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
@@ -62,6 +80,7 @@ const Skills = () => {
       <div className="flex flex-row flex-wrap justify-center items-center">
         {Skills.map((skill, idx) => (
           <div
+            data-aos="flip-right"
             key={idx}
             className="w-20 h-20 hover:w-24 hover:h-24 px-2 py-2 m-4 hover:m-0 hover:mx-2 duration-150 ease-in-out border bg-cyan-900 bg-opacity-20 text-cyan-500 hover:text-cyan-300 border-cyan-600 hover:border-cyan-400 rounded-md"
           >
