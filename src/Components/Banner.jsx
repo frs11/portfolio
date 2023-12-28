@@ -40,7 +40,7 @@ const Banner = () => {
               1000,
               "a Junior MERN-stack Developer",
               1000,
-              "an Undergraduate CSE Student",
+              "a graduate CSE Student",
               1000,
             ]}
             speed={50}
