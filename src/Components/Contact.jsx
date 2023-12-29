@@ -8,6 +8,7 @@ import { FaHandHoldingHeart } from "react-icons/fa6";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
@@ -37,11 +38,24 @@ const Contact = () => {
         "Ki5fP7GvE1-dWNqH9"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (res) => {
+          if (res.status == 200 && res.text == "OK") {
+            Swal.fire({
+              title: "Message sent successfully!",
+              text: "You will get a reply as soon as possible",
+              icon: "success",
+            });
+            e.target.reset();
+          }
         },
-        (error) => {
-          console.log(error.text);
+        (err) => {
+          console.log(err);
+          Swal.fire({
+            title: "Message sending failed!",
+            text: "Please try again",
+            icon: "error",
+          });
+          e.target.reset();
         }
       );
   };
@@ -112,6 +126,7 @@ const Contact = () => {
             placeholder="Your name"
             className="w-full mb-5 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
             name="user_name"
+            required
           />{" "}
           <br />
           <label className="block text-slate-300">Email</label>
@@ -120,11 +135,13 @@ const Contact = () => {
             placeholder="example@email.com"
             className="w-full mb-5 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
             name="user_email"
+            required
           />{" "}
           <br />
           <label className="block text-slate-300">Message</label>
           <textarea
             name="message"
+            required
             placeholder="Type your message"
             className="w-full px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
           />{" "}
