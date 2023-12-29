@@ -1,44 +1,53 @@
-/* eslint-disable react/no-unescaped-entities */
-import facebook from "../assets/social icon/icons8-facebook.svg";
-import github from "../assets/social icon/icons8-github.svg";
-import linkedin from "../assets/social icon/icons8-linkedin.svg";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_lsvup1e",
+        "template_ii0pan6",
+        form.current,
+        "Ki5fP7GvE1-dWNqH9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
-    <div id="contact" className="w-10/12 mx-auto mb-10">
-      <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
-        <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
-          Contact
-        </span>
-      </p>
-      <div className="w-5/6 md:w-1/2 mx-auto bg-slate-600 bg-opacity-40 px-5 py-4 rounded-lg text-center">
-        <p className="text-xl md:text-3xl text-slate-200">
-          Let's stay connected{" "}
-        </p>
-        <div className="flex justify-center my-5 space-x-2 text-center">
-          <a
-            href="https://github.com/frs11"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={github} className="w-[50px]" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/fayezur-rahman/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedin} className="w-[50px]" alt="" />
-          </a>
-          <a
-            href="https://www.facebook.com/fayezurrahman017"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={facebook} className="w-[50px]" alt="" />
-          </a>
-        </div>
+    <div
+      id="contact"
+      className="w-11/12 md:w-10/12 lg:w-8/12 mx-auto flex justify-around items-center bg-slate-800 bg-opacity-50 rounded-lg text-white px-5 py-4"
+    >
+      <div>
+        <p>Lets stay Connected </p>
       </div>
+      <form
+        ref={form}
+        onSubmit={sendEmail}
+        className="px-5 py-3 bg-slate-950 rounded-lg opacity-70"
+      >
+        <label>Name</label>
+        <input type="text" name="user_name" /> <br />
+        <label>Email</label>
+        <input type="email" name="user_email" /> <br />
+        <label>Message</label>
+        <textarea name="message" /> <br />
+        <input
+          className="px-3 py-1 my-5 border border-cyan-500  rounded-md"
+          type="submit"
+          value="Send"
+        />
+      </form>
     </div>
   );
 };
