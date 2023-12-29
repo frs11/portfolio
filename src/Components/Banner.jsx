@@ -21,7 +21,7 @@ const Banner = () => {
   }, []);
   return (
     <div className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]">
-      <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto px-4 md:px-0 py-5 md:py-6 lg:py-10 text-slate-100">
+      <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto py-5 md:py-6 lg:py-10 text-slate-100">
         <div className="px-2 md:px-8 lg:px-20">
           <p>Hi, I'm</p>
           <p
@@ -60,10 +60,10 @@ const Banner = () => {
           <DownloadResumeButton></DownloadResumeButton>
         </div>
       </div>
-      <div className="w-3/4 py-5 md:py-0 md:w-1/2 h-full mx-auto">
+      <div className="w-3/4 py-5 md:w-1/2 h-full mx-auto">
         <img
           data-aos="zoom-in"
-          className="h-full border-2 border-cyan-300 rounded-full mb-0 mx-auto"
+          className="h-[90%] border-2 border-cyan-300 rounded-full mb-0 mx-auto"
           // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
           src="https://i.ibb.co/SJgncwg/Portfolio-Image.png"
           alt="Image"

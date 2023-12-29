@@ -5,9 +5,26 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
 import { FaHandHoldingHeart } from "react-icons/fa6";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 const Contact = () => {
   const form = useRef();
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      offset: 130,
+    });
+    AOS.init({
+      startEvent: "onReveal",
+    });
+    AOS.refresh();
+
+    return AOS.refreshHard();
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -39,7 +56,7 @@ const Contact = () => {
         </span>
       </p>
       <div className="flex flex-col md:flex-row mx-auto py-2 px-3 justify-around items-center md:mt-12">
-        <div className="w-full py-5 px-3 md:w-1/2">
+        <div className="w-full py-5 px-3 md:w-1/2" data-aos="zoom-in">
           <p className="text-2xl md:text-3xl text-slate-200 font-thin mb-10 flex items-center justify-center md:justify-start">
             Lets stay Connected{" "}
             <FaHandHoldingHeart className="ml-2 text-cyan-400"></FaHandHoldingHeart>{" "}
@@ -80,16 +97,20 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        <p className="md:hidden pt-5 pb-2 text-xl text-slate-300">
+          Leave a message
+        </p>
         <form
+          data-aos="zoom-out-down"
           ref={form}
           onSubmit={sendEmail}
-          className="px-5 py-5 my-5 bg-slate-950 w-full md:w-1/2 rounded-lg opacity-70"
+          className="px-5 py-5 bg-slate-950 w-full md:w-1/2 rounded-lg bg-opacity-60"
         >
           <label className="block text-slate-300">Name</label>
           <input
             type="text"
-            placeholder="Your Name"
-            className="w-full mb-3 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
+            placeholder="Your name"
+            className="w-full mb-5 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
             name="user_name"
           />{" "}
           <br />
@@ -97,7 +118,7 @@ const Contact = () => {
           <input
             type="email"
             placeholder="example@email.com"
-            className="w-full mb-3 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
+            className="w-full mb-5 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
             name="user_email"
           />{" "}
           <br />
@@ -105,14 +126,16 @@ const Contact = () => {
           <textarea
             name="message"
             placeholder="Type your message"
-            className="w-full mb-3 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
+            className="w-full px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
           />{" "}
           <br />
-          <input
-            className="px-3 py-2 my-5 border border-cyan-500 rounded-md"
-            type="submit"
-            value="Send Message"
-          />
+          <div className="flex justify-center md:justify-start">
+            <input
+              className="px-3 py-2 my-3 md:my-4 cursor-pointer border border-cyan-600 rounded-md text-slate-300 hover:text-white duration-200 hover:border-cyan-400 font-Rajdhani"
+              type="submit"
+              value="Send Message"
+            />
+          </div>
         </form>
       </div>
     </div>

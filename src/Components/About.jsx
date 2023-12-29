@@ -24,10 +24,10 @@ const About = () => {
       id="about"
       className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]"
     >
-      <div className="w-3/4 py-5 px-5 md:py-0 md:w-1/2 h-full mx-auto">
+      <div className="w-3/4 py-5 px-5 md:w-1/2 h-full mx-auto">
         <img
           data-aos="zoom-in-up"
-          className="h-full mb-0 mx-auto border-2 rounded-full border-cyan-300"
+          className="h-[90%] mb-0 mx-auto border-2 rounded-full border-cyan-300"
           // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
           src="https://i.ibb.co/nsZmQhR/Portfolio-Image-1.png"
           alt="Image"
