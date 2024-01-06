@@ -20,6 +20,14 @@ const Banner = () => {
 
     return AOS.refreshHard();
   }, []);
+  const bio = (
+    <>
+      Weaving creativity into code to build stunning and intuitive user
+      interfaces. Passionate about the artistry of front-end development.
+      Specializing in responsive and user-centric design. Bringing websites to
+      life with a focus on accessibility and an eye for detail.
+    </>
+  );
   return (
     <div className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]">
       <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto py-5 md:py-6 lg:py-10 text-slate-100">
@@ -32,7 +40,7 @@ const Banner = () => {
             <GradientText text={"Fayezur Rahman"}></GradientText>
           </p>
           <TypeAnimation
-            className="font-Rajdhani my-2 md:my-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-600 text-lg lg:text-lg"
+            className="font-Rajdhani font-semibold my-2 md:my-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-600 text-lg lg:text-lg"
             sequence={[
               // Same substring at the start will only be typed once, initially
               "a Junior Font-end Developer",
@@ -50,13 +58,9 @@ const Banner = () => {
 
           <p
             data-aos="flip-down"
-            className="my-5 md:mb-7 text-sm md:text-base text-slate-300 font-light"
+            className="my-5 md:mb-7 text-sm md:text-base text-slate-300"
           >
-            Weaving creativity into code to build stunning and intuitive user
-            interfaces. Passionate about the artistry of front-end development.
-            Specializing in responsive and user-centric design. Bringing
-            websites to life with a focus on accessibility and an eye for
-            detail.
+            <GradientText text={bio}></GradientText>{" "}
           </p>
           <DownloadResumeButton></DownloadResumeButton>
         </div>

@@ -1,6 +1,7 @@
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import GradientText from "./GradientText";
 
 const Educations = () => {
   useEffect(() => {
@@ -21,7 +22,7 @@ const Educations = () => {
     <div className="w-11/12 md:w-10/12 pt-10 mx-auto">
       <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
         <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
-          Educations
+          <GradientText text={"Educations"}></GradientText>
         </span>
       </p>
 

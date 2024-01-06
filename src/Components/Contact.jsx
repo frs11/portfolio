@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import Swal from "sweetalert2";
+import GradientText from "./GradientText";
 
 const Contact = () => {
   const form = useRef();
@@ -66,13 +67,13 @@ const Contact = () => {
     >
       <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
         <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
-          Contact
+          <GradientText text={"Contact Me"}></GradientText>
         </span>
       </p>
       <div className="flex flex-col md:flex-row mx-auto py-2 px-3 justify-around items-center md:mt-12">
         <div className="w-full py-5 px-3 md:w-1/2" data-aos="zoom-in">
-          <p className="text-2xl md:text-3xl text-slate-200 font-thin mb-10 flex items-center justify-center md:justify-start">
-            Lets stay Connected{" "}
+          <p className="text-2xl md:text-3xl text-slate-200 font-normal mb-10 flex items-center justify-center md:justify-start">
+            <GradientText text={"Lets stay Connected"}></GradientText>
             <FaHandHoldingHeart className="ml-2 text-cyan-400"></FaHandHoldingHeart>{" "}
           </p>
           <div className="flex justify-center md:justify-start px-5 my-5 space-x-3 text-center">

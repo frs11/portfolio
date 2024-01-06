@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import GradientText from "./GradientText";
 
 const About = () => {
   useEffect(() => {
@@ -19,6 +20,14 @@ const About = () => {
 
     return AOS.refreshHard();
   }, []);
+  const details = (
+    <>
+      "Passionate junior front-end developer adept at turning concepts into
+      captivating digital interfaces. I thrive on staying at the forefront of
+      tech trends. Eager to collaborate on groundbreaking projects and
+      contribute to the evolving landscape of web development."
+    </>
+  );
   return (
     <div
       id="about"
@@ -38,19 +47,16 @@ const About = () => {
         <div className="px-2 md:px-8 lg:px-20">
           <p className="text-2xl md:text-4xl my-2 md:my-4 font-Orbitron font-medium text-cyan-300">
             <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
-              About Me
+              <GradientText text={"About Me"}></GradientText>
             </span>
           </p>
           <p
             data-aos="flip-up"
-            className="my-5 md:mb-8 text-sm md:text-base text-slate-300 font-light"
+            className="my-5 px-1 md:px-3 md:mb-8 text-sm md:text-base font-normal"
           >
-            Passionate junior front-end developer adept at turning concepts into
-            captivating digital interfaces. I thrive on staying at the forefront
-            of tech trends. Eager to collaborate on groundbreaking projects and
-            contribute to the evolving landscape of web development.
+            <GradientText text={details}></GradientText>
           </p>
-          <p className="text-sm md:text-base mb-3 text-slate-300 font-light">
+          <p className="text-sm md:text-base mb-3 text-cyan-200 font-light">
             Connect with me
           </p>
           <Link to="contact" spy={true} smooth={true}>

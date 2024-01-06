@@ -1,3 +1,4 @@
+import GradientText from "./GradientText";
 import Project from "./Project";
 
 const Projects = () => {
@@ -44,7 +45,7 @@ const Projects = () => {
     <div id="projects" className="w-11/12 md:w-10/12 pt-10 mx-auto">
       <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
         <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
-          Projects
+          <GradientText text={"Projects"}></GradientText>
         </span>
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-12 gap-4">

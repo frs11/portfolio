@@ -8,14 +8,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.layoutbg {
+/* .layoutbg {
   background: url("https://i.ibb.co/8dXM8kq/React-Background-blur-min.jpg"),
     linear-gradient(to left, #07070757, #0202026e);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 
 .gradient-border-button {
   display: flex;

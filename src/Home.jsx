@@ -9,7 +9,10 @@ import Skills from "./Components/Skills";
 
 const Home = () => {
   return (
-    <div id="home" className="lg:max-w-[1800px] relative layoutbg mx-auto">
+    <div
+      id="home"
+      className="lg:max-w-[1800px] relative layoutbg mx-auto bg-gradient-to-r from-slate-950 to-slate-800"
+    >
       <Navbar></Navbar>
       <Banner></Banner>
       <About></About>
