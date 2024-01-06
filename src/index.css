@@ -4,24 +4,45 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.headerbg {
-  background: url("https://i.ibb.co/GTMXWgQ/React-Background-blur.jpg"),
-    linear-gradient(to left, #07070757, #0202026e);
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .layoutbg {
-  background: url("https://i.ibb.co/GTMXWgQ/React-Background-blur.jpg"),
+  background: url("https://i.ibb.co/8dXM8kq/React-Background-blur-min.jpg"),
     linear-gradient(to left, #07070757, #0202026e);
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.gradient-border-button {
+  display: flex;
+  align-items: center;
+  position: relative; /* Allow for absolute positioning of pseudo-elements */
+  padding: 10px 20px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #fff; /* Set text color */
+  border: none; /* Remove default border */
+  background: transparent; /* Transparent background */
+  cursor: pointer; /* Indicate button interaction */
+}
+
+.gradient-border-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #33a9ee00; /* Transparent border for masking */
+  border-radius: 5px; /* Adjust border radius as needed */
+  background: linear-gradient(
+    to right,
+    #38e8f5,
+    #2b72c4
+  ); /* Set your desired gradient colors */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
 }

@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import GradientText from "./GradientText";
 
 const Banner = () => {
   useEffect(() => {
@@ -23,15 +24,15 @@ const Banner = () => {
     <div className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]">
       <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto py-5 md:py-6 lg:py-10 text-slate-100">
         <div className="px-2 md:px-8 lg:px-20">
-          <p>Hi, I'm</p>
+          <p className="text-base md:text-xl font-Rivage">Hi, I'm</p>
           <p
             data-aos="zoom-in"
-            className="text-2xl md:text-3xl lg:text-5xl my-2 md:my-4 font-Orbitron font-medium text-cyan-300"
+            className="text-2xl md:text-3xl lg:text-5xl my-2 md:my-4 font-Orbitron font-medium"
           >
-            Fayezur Rahman
+            <GradientText text={"Fayezur Rahman"}></GradientText>
           </p>
           <TypeAnimation
-            className="font-Rajdhani my-2 md:my-4 text-cyan-400 text-lg lg:text-lg"
+            className="font-Rajdhani my-2 md:my-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-600 text-lg lg:text-lg"
             sequence={[
               // Same substring at the start will only be typed once, initially
               "a Junior Font-end Developer",
@@ -65,7 +66,7 @@ const Banner = () => {
           data-aos="zoom-in"
           className="h-[90%] border-2 border-cyan-300 rounded-full mb-0 mx-auto"
           // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
-          src="https://i.ibb.co/SJgncwg/Portfolio-Image.png"
+          src="https://i.ibb.co/d71rcQS/Portfolio-Image-min.png"
           alt="Image"
         />
       </div>
