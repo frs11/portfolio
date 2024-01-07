@@ -14,17 +14,15 @@ const DownloadResumeButton = () => {
   };
 
   return (
-    // <div className="w-max bg-gradient-to-br from-cyan-400 to-blue-700 p-1 rounded-md">
-    <div>
+    <div className="w-fit p-[2px] bg-gradient-to-br from-cyan-400 to-blue-700 rounded-md">
       <button
-        className="gradient-border-button"
-        // className="flex justify-center items-center border rounded-md border-cyan-400 hover:bg-cyan-500 text-base md:text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white px-3 py-1 md:py-2"
-        // className="flex justify-center items-center border rounded-md border-cyan-400  text-base md:text-lg font-Rajdhani font-semibold text-black duration-150 ease-in-out  px-3 py-1 md:py-2"
-        // className="flex justify-center items-center border rounded-md border-transparent bg-gradient-to-br from-cyan-300 to-blue-700 text-base md:text-lg font-Rajdhani font-semibold hover:text-black duration-150 ease-in-out text-white px-3 py-1 md:py-2 bg-opacity-50 bg-clip-border"
+        className="flex justify-center items-center rounded-md bg-slate-900 hover:bg-gradient-to-r from-cyan-600 to-blue-800 text-base font-Rajdhani font-semibold duration-150 px-3 py-1 md:py-2 border-2 border-slate-900 text-cyan-300"
         onClick={handleDownload}
       >
         <FiDownload className="mr-2"></FiDownload>
-        <span className="hidden md:flex mr-1">Download </span> Resume
+        <span className="flex">
+          <span className="hidden md:flex mr-1">Download</span> Resume
+        </span>
       </button>
     </div>
   );

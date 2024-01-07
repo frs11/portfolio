@@ -66,13 +66,18 @@ const Banner = () => {
         </div>
       </div>
       <div className="w-3/4 py-5 md:w-1/2 h-full mx-auto">
-        <img
-          data-aos="zoom-in"
-          className="h-[90%] border-2 border-cyan-300 rounded-full mb-0 mx-auto"
-          // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
-          src="https://i.ibb.co/d71rcQS/Portfolio-Image-min.png"
-          alt="Image"
-        />
+        <div
+          data-aos="flip-up"
+          className="w-fit mx-auto p-[3px] bg-gradient-to-br from-cyan-400 to-blue-700 h-[90%] rounded-full"
+        >
+          <img
+            data-aos="flip-up"
+            className="h-full bg-slate-900 rounded-full mb-0 mx-auto"
+            // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
+            src="https://i.ibb.co/d71rcQS/Portfolio-Image-min.png"
+            alt="Image"
+          />
+        </div>
       </div>
     </div>
   );

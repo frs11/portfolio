@@ -4,6 +4,7 @@ import { VscEye } from "react-icons/vsc";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import GradientText from "./GradientText";
 
 const Project = ({ project }) => {
   useEffect(() => {
@@ -41,8 +42,12 @@ const Project = ({ project }) => {
         />
       </div>
       <div className="px-5 py-3">
-        <p className="text-white mb-3 text-lg">{project.title}</p>
-        <p className="mb-6">{project.description}</p>
+        <p className="font-Rivage font-semibold mb-5 text-xl">
+          <GradientText text={project.title}></GradientText>
+        </p>
+        <p className="mb-6">
+          <GradientText text={project.description}></GradientText>{" "}
+        </p>
       </div>
     </div>
   );

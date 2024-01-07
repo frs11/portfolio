@@ -2,15 +2,10 @@ import GradientText from "./GradientText";
 import Project from "./Project";
 
 const Projects = () => {
-  const restoraImg = "https://i.ibb.co/BBdFN66/Restora.png";
-  const pickNdropImg = "https://i.ibb.co/G5HhYvr/pick-n-drop.png";
-  const foodbankImg = "https://i.ibb.co/vXsgqRK/Foodbank.png";
-  const taskbookImg = "https://i.ibb.co/W2CBSdB/taskbook.png";
-
   const items = [
     {
       title: "Restora",
-      image: restoraImg,
+      image: "https://i.ibb.co/BBdFN66/Restora.png",
       liveLink: "https://restora-mern.netlify.app/",
       repoLink: "https://github.com/frs11/restora-client-side",
       description:
@@ -18,7 +13,7 @@ const Projects = () => {
     },
     {
       title: "Pick'n Drop",
-      image: pickNdropImg,
+      image: "https://i.ibb.co/G5HhYvr/pick-n-drop.png",
       liveLink: "https://pick-n-drop-service.netlify.app/",
       repoLink: "https://github.com/frs11/pick-n-drop-client-side",
       description:
@@ -26,7 +21,7 @@ const Projects = () => {
     },
     {
       title: "Foodbank",
-      image: foodbankImg,
+      image: "https://i.ibb.co/vXsgqRK/Foodbank.png",
       liveLink: "https://food-bank-mern.netlify.app/",
       repoLink: "https://github.com/frs11/foodbank-client-side",
       description:
@@ -34,7 +29,7 @@ const Projects = () => {
     },
     {
       title: "Taskbook",
-      image: taskbookImg,
+      image: "https://i.ibb.co/W2CBSdB/taskbook.png",
       liveLink: "https://taskbook-mern.netlify.app/",
       repoLink: "https://github.com/frs11/task-manager",
       description:

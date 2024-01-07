@@ -147,12 +147,13 @@ const Contact = () => {
             className="w-full px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
           />{" "}
           <br />
-          <div className="flex justify-center md:justify-start">
-            <input
-              className="px-3 py-2 my-3 md:my-4 cursor-pointer border border-cyan-600 rounded-md text-slate-300 hover:text-white duration-200 hover:border-cyan-400 font-Rajdhani"
+          <div className="flex justify-center md:justify-start w-fit my-3 md:my-4 p-[2px] bg-gradient-to-br from-cyan-400 to-blue-700 rounded-md">
+            <button
+              className="px-3 py-2 cursor-pointer border-2 border-slate-900 rounded-md bg-slate-900 hover:bg-gradient-to-r from-cyan-600 to-blue-800 duration-200 text-cyan-300 font-Rajdhani"
               type="submit"
-              value="Send Message"
-            />
+            >
+              Send Message
+            </button>
           </div>
         </form>
       </div>
