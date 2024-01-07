@@ -1,4 +1,4 @@
-import logo from "../assets/Logo 1.png";
+import logo from "../assets/Logo/Logo 1.png";
 const Footer = () => {
   return (
     <div className="px-6 md:px-11 pt-6 bg-slate-950 bg-opacity-80 border-t-[1px] border-gray-700">

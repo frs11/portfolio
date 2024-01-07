@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { FaCode } from "react-icons/fa";
 import { VscEye } from "react-icons/vsc";
+import { BsFillSignTurnRightFill } from "react-icons/bs";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -42,7 +43,8 @@ const Project = ({ project }) => {
         />
       </div>
       <div className="px-5 py-3">
-        <p className="font-Rivage font-semibold mb-5 text-xl">
+        <p className="flex items-center font-Rajdhani font-semibold mb-5 text-xl">
+          <BsFillSignTurnRightFill className="mr-1 text-cyan-400"></BsFillSignTurnRightFill>
           <GradientText text={project.title}></GradientText>
         </p>
         <p className="mb-6">

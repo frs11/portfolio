@@ -83,9 +83,13 @@ const Skills = () => {
           <div
             data-aos="flip-right"
             key={idx}
-            className="w-20 h-20 hover:w-24 hover:h-24 px-2 py-2 m-4 hover:my-2 hover:mx-2 border bg-cyan-900 bg-opacity-20 text-cyan-500 hover:text-cyan-300 border-cyan-600 hover:border-cyan-400 rounded-md duration-1000"
+            className="w-20 h-20 px-2 py-2 m-4 border bg-cyan-900 bg-opacity-20 text-cyan-500 hover:text-cyan-300 border-cyan-600 hover:border-cyan-400 rounded-md duration-1000"
           >
-            <img className="w-full h-full" src={skill.logo} alt="" />
+            <img
+              className="w-full h-full hover:animate-spin"
+              src={skill.logo}
+              alt=""
+            />
             <p className="mt-3 text-sm lg:text-base text-center">
               {skill.title}
             </p>

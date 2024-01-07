@@ -1,15 +1,16 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Link } from "react-scroll";
+import logo from "../assets/Logo/Logo 1.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const linksStyles =
-    "rounded-lg cursor-pointer px-4 hover:border-b-2 border-b-2 border-b-transparent hover:text-white hover:border-b-cyan-400 duration-100 ease-in-out";
+    "rounded-lg cursor-pointer px-4 text-slate-300 border-b-2 border-b-transparent hover:text-cyan-300 hover:border-b-cyan-400 duration-100 ease-in-out";
 
   const dropdownLinksStyles =
-    "rounded-lg px-4 bg-slate-800 text-white my-2 hover:border-b-2 cursor-pointer hover:border-cyan-100 duration-100 ease-in-out";
+    "rounded-lg px-4 bg-slate-800 text-white hover:text-cyan-300 my-2 hover:border-b-2 cursor-pointer hover:border-cyan-300 duration-100 ease-in-out";
 
   const links = (
     <>
@@ -55,11 +56,7 @@ const Navbar = () => {
         <div>
           <span className="flex items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true}>
-              <img
-                className="w-12"
-                src="https://i.ibb.co/5R5LR93/Logo-1.png"
-                alt=""
-              />
+              <img className="w-12" src={logo} alt="" />
             </Link>
           </span>
         </div>

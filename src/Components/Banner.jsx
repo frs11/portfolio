@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import GradientText from "./GradientText";
+import headerImagee from "../assets/Images/image 1.png";
 
 const Banner = () => {
   useEffect(() => {
@@ -31,7 +32,7 @@ const Banner = () => {
   return (
     <div className=" flex flex-col-reverse md:flex-row md:justify-around lg:h-[550px]">
       <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto py-5 md:py-6 lg:py-10 text-slate-100">
-        <div className="px-2 md:px-8 lg:px-20">
+        <div className="px-8 lg:px-20">
           <p className="text-base md:text-xl font-Rivage">Hi, I'm</p>
           <p
             data-aos="zoom-in"
@@ -58,7 +59,7 @@ const Banner = () => {
 
           <p
             data-aos="flip-down"
-            className="my-5 md:mb-7 text-sm md:text-base text-slate-300"
+            className="my-5 md:mb-7 px-3 text-sm md:text-base"
           >
             <GradientText text={bio}></GradientText>{" "}
           </p>
@@ -73,8 +74,7 @@ const Banner = () => {
           <img
             data-aos="flip-up"
             className="h-full bg-slate-900 rounded-full mb-0 mx-auto"
-            // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
-            src="https://i.ibb.co/d71rcQS/Portfolio-Image-min.png"
+            src={headerImagee}
             alt="Image"
           />
         </div>

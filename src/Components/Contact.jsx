@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoMailSharp } from "react-icons/io5";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -60,6 +61,8 @@ const Contact = () => {
         }
       );
   };
+  const linksStyle =
+    "text-4xl text-cyan-500 hover:text-cyan-300 hover:animate-pulse";
   return (
     <div
       id="contact"
@@ -82,74 +85,76 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub className="text-4xl text-slate-400 hover:text-white"></FaGithub>
-              {/* <img src={github} alt="" /> */}
+              <FaGithub className={linksStyle}></FaGithub>
             </a>
             <a
               href="https://www.linkedin.com/in/fayezur-rahman/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedin className="text-4xl text-slate-400 hover:text-white"></FaLinkedin>
-              {/* <img src={linkedin} className="w-[50px]" alt="" /> */}
+              <FaLinkedin className={linksStyle}></FaLinkedin>
             </a>
             <a
               href="https://www.facebook.com/fayezurrahman017"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebookSquare className="text-4xl text-slate-400 hover:text-white"></FaFacebookSquare>
-              {/* <img src={facebook} className="w-[50px]" alt="" /> */}
+              <FaFacebookSquare className={linksStyle}></FaFacebookSquare>
             </a>
             <a
               href="mailto:fayezurrahman017@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {/* <IoIosMail className="text-4xl"></IoIosMail> */}
-              <IoMailSharp className="text-4xl text-slate-400 hover:text-white"></IoMailSharp>
-              {/* <img src={facebook} className="w-[50px]" alt="" /> */}
+              <IoMailSharp className={linksStyle}></IoMailSharp>
+            </a>
+            <a
+              href="tel:+8801627245757"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaWhatsapp className={linksStyle}></FaWhatsapp>
             </a>
           </div>
         </div>
-        <p className="md:hidden pt-5 pb-2 text-xl text-slate-300">
+        <p className="md:hidden pt-5 pb-2 text-xl text-cyan-300">
           Leave a message
         </p>
         <form
-          data-aos="zoom-out-down"
+          data-aos="zoom-in"
           ref={form}
           onSubmit={sendEmail}
           className="px-5 py-5 bg-slate-950 w-full md:w-1/2 rounded-lg bg-opacity-60"
         >
-          <label className="block text-slate-300">Name</label>
+          <label className="block text-slate-500">Name</label>
           <input
             type="text"
             placeholder="Your name"
-            className="w-full mb-5 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
+            className="w-full text-slate-400 mb-5 px-2 py-1 placeholder:text-sm placeholder:text-slate-500 rounded bg-slate-800 bg-opacity-70"
             name="user_name"
             required
           />{" "}
           <br />
-          <label className="block text-slate-300">Email</label>
+          <label className="block text-slate-500">Email</label>
           <input
             type="email"
             placeholder="example@email.com"
-            className="w-full mb-5 px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
+            className="w-full text-slate-400 mb-5 px-2 py-1 placeholder:text-sm placeholder:text-slate-500 rounded bg-slate-800 bg-opacity-70"
             name="user_email"
             required
           />{" "}
           <br />
-          <label className="block text-slate-300">Message</label>
+          <label className="block text-slate-500">Message</label>
           <textarea
             name="message"
-            required
             placeholder="Type your message"
-            className="w-full px-2 py-1 placeholder:text-sm rounded bg-slate-700 bg-opacity-70"
+            className="w-full text-slate-400 px-2 py-1 placeholder:text-sm placeholder:text-slate-500 rounded bg-slate-800 bg-opacity-70"
+            required
           />{" "}
           <br />
-          <div className="flex justify-center md:justify-start w-fit my-3 md:my-4 p-[2px] bg-gradient-to-br from-cyan-400 to-blue-700 rounded-md">
+          <div className="flex justify-center md:justify-start w-fit my-3 md:my-4 p-[1px] bg-gradient-to-br from-cyan-400 to-blue-700 rounded">
             <button
-              className="px-3 py-2 cursor-pointer border-2 border-slate-900 rounded-md bg-slate-900 hover:bg-gradient-to-r from-cyan-600 to-blue-800 duration-200 text-cyan-300 font-Rajdhani"
+              className="px-3 py-2 cursor-pointer border-2 border-slate-900 rounded bg-slate-900 hover:bg-gradient-to-r from-cyan-600 to-blue-800 duration-200 text-cyan-300 font-Rajdhani"
               type="submit"
             >
               Send Message

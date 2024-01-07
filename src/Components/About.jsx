@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import GradientText from "./GradientText";
+import aboutMeImage from "../assets/Images/Image 2.png";
 
 const About = () => {
   useEffect(() => {
@@ -41,15 +42,13 @@ const About = () => {
           <img
             data-aos="zoom-in"
             className="h-full bg-slate-900 rounded-full mb-0 mx-auto"
-            // className="h-[90%] mb-0 mx-auto border-2 rounded-full border-cyan-300"
-            // src="https://i.ibb.co/FWstzZW/hand-cross-removebg-preview.png"
-            src="https://i.ibb.co/jWGnHCK/Portfolio-Image-1-min-min.png"
+            src={aboutMeImage}
             alt="Image"
           />
         </div>
       </div>
       <div className="w-10/12 md:w-1/2 flex justify-center items-center mx-auto px-4 md:px-0 py-5 md:py-6 lg:py-10 text-slate-100">
-        <div className="px-2 md:px-8 lg:px-20">
+        <div className="px-8 lg:px-20 text-center md:text-left">
           <p className="text-2xl md:text-4xl my-2 md:my-4 font-Orbitron font-medium text-cyan-300">
             <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
               <GradientText text={"About Me"}></GradientText>
@@ -64,9 +63,14 @@ const About = () => {
           <p className="text-sm md:text-base mb-3 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
             Connect with me
           </p>
-          <Link to="contact" spy={true} smooth={true}>
-            <div className="w-fit p-[2px] bg-gradient-to-br from-cyan-400 to-blue-700 rounded-md">
-              <button className="flex justify-center items-center border-2 border-slate-900 rounded-md bg-slate-900 hover:bg-gradient-to-r from-cyan-600 to-blue-800 text-base md:text-lg font-Rajdhani font-semibold  duration-150 ease-in-out text-cyan-300 px-3 py-1 md:py-2">
+          <Link
+            to="contact"
+            className="flex justify-center md:justify-start"
+            spy={true}
+            smooth={true}
+          >
+            <div className="w-fit p-[1px] bg-gradient-to-br from-cyan-400 to-blue-700 rounded">
+              <button className="flex justify-center items-center border-2 border-slate-900 rounded bg-slate-900 hover:bg-gradient-to-r from-cyan-600 to-blue-800 text-base md:text-lg font-Rajdhani font-semibold  duration-150 ease-in-out text-cyan-300 px-3 py-1 md:py-2">
                 <FiPhoneCall className="mr-2"></FiPhoneCall>
                 Connect
               </button>
