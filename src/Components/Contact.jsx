@@ -62,7 +62,8 @@ const Contact = () => {
       );
   };
   const linksStyle =
-    "text-4xl text-cyan-500 hover:text-cyan-300 hover:animate-pulse";
+    "text-2xl lg:text-3xl text-cyan-500 hover:text-cyan-300 hover:animate-pulse";
+  const socialIconContainerStyle = "border border-cyan-600 rounded-full p-1.5";
   return (
     <div
       id="contact"
@@ -75,46 +76,59 @@ const Contact = () => {
       </p>
       <div className="flex flex-col md:flex-row mx-auto py-2 px-3 justify-around items-center md:mt-12">
         <div className="w-full py-5 px-3 md:w-1/2" data-aos="zoom-in">
-          <p className="text-2xl md:text-3xl text-slate-200 font-normal mb-10 flex items-center justify-center md:justify-start">
-            <GradientText text={"Lets stay Connected"}></GradientText>
-            <FaHandHoldingHeart className="ml-2 text-cyan-400"></FaHandHoldingHeart>{" "}
+          <p className="text-2xl md:text-3xl text-center md:text-left font-medium">
+            <GradientText text={"Lets stay"}></GradientText>
+          </p>
+          <p className="text-4xl md:text-5xl font-thin mt-2 mb-12 flex items-center justify-center md:justify-start">
+            <GradientText text={"Connected"}></GradientText>
+            <FaHandHoldingHeart className="ml-2 text-cyan-400"></FaHandHoldingHeart>
           </p>
           <div className="flex justify-center md:justify-start px-5 my-5 space-x-3 text-center">
-            <a
-              href="https://github.com/frs11"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className={linksStyle}></FaGithub>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/fayezur-rahman/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin className={linksStyle}></FaLinkedin>
-            </a>
-            <a
-              href="https://www.facebook.com/fayezurrahman017"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookSquare className={linksStyle}></FaFacebookSquare>
-            </a>
-            <a
-              href="mailto:fayezurrahman017@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IoMailSharp className={linksStyle}></IoMailSharp>
-            </a>
-            <a
-              href="tel:+8801627245757"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp className={linksStyle}></FaWhatsapp>
-            </a>
+            <div className={socialIconContainerStyle}>
+              <a
+                href="https://github.com/frs11"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub className={linksStyle}></FaGithub>
+              </a>
+            </div>
+            <div className={socialIconContainerStyle}>
+              <a
+                href="https://www.linkedin.com/in/fayezur-rahman/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className={linksStyle}></FaLinkedin>
+              </a>
+            </div>
+            <div className={socialIconContainerStyle}>
+              <a
+                href="https://www.facebook.com/fayezurrahman017"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookSquare className={linksStyle}></FaFacebookSquare>
+              </a>
+            </div>
+            <div className={socialIconContainerStyle}>
+              <a
+                href="mailto:fayezurrahman017@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IoMailSharp className={linksStyle}></IoMailSharp>
+              </a>
+            </div>
+            <div className={socialIconContainerStyle}>
+              <a
+                href="tel:+8801627245757"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp className={linksStyle}></FaWhatsapp>
+              </a>
+            </div>
           </div>
         </div>
         <p className="md:hidden pt-5 pb-2 text-xl text-cyan-300">

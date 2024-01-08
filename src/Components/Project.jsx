@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import GradientText from "./GradientText";
+import GradientDesc from "./GradientDesc";
 
 const Project = ({ project }) => {
   useEffect(() => {
@@ -48,7 +49,7 @@ const Project = ({ project }) => {
           <GradientText text={project.title}></GradientText>
         </p>
         <p className="mb-6">
-          <GradientText text={project.description}></GradientText>{" "}
+          <GradientDesc text={project.description}></GradientDesc>{" "}
         </p>
       </div>
     </div>

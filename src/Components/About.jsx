@@ -6,6 +6,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import GradientText from "./GradientText";
 import aboutMeImage from "../assets/Images/Image 2.png";
+import GradientDesc from "./GradientDesc";
 
 const About = () => {
   useEffect(() => {
@@ -23,10 +24,10 @@ const About = () => {
   }, []);
   const details = (
     <>
-      "Passionate junior front-end developer adept at turning concepts into
+      Passionate junior front-end developer adept at turning concepts into
       captivating digital interfaces. I thrive on staying at the forefront of
       tech trends. Eager to collaborate on groundbreaking projects and
-      contribute to the evolving landscape of web development."
+      contribute to the evolving landscape of web development.
     </>
   );
   return (
@@ -58,7 +59,7 @@ const About = () => {
             data-aos="flip-up"
             className="my-5 px-1 md:px-3 md:mb-8 text-sm md:text-base font-normal"
           >
-            <GradientText text={details}></GradientText>
+            <GradientDesc text={details}></GradientDesc>
           </p>
           <p className="text-sm md:text-base mb-3 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600">
             Connect with me

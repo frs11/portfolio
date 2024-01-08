@@ -6,6 +6,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import GradientText from "./GradientText";
 import headerImagee from "../assets/Images/image 1.png";
+import GradientDesc from "./GradientDesc";
 
 const Banner = () => {
   useEffect(() => {
@@ -41,7 +42,7 @@ const Banner = () => {
             <GradientText text={"Fayezur Rahman"}></GradientText>
           </p>
           <TypeAnimation
-            className="font-Rajdhani font-semibold my-2 md:my-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-600 text-lg lg:text-lg"
+            className="font-Rajdhani font-semibold my-2 md:my-4 lg:ml-3 animate-pulse border-cyan-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-cyan-600 text-lg lg:text-lg"
             sequence={[
               // Same substring at the start will only be typed once, initially
               "a Junior Font-end Developer",
@@ -61,18 +62,18 @@ const Banner = () => {
             data-aos="flip-down"
             className="my-5 md:mb-7 px-3 text-sm md:text-base"
           >
-            <GradientText text={bio}></GradientText>{" "}
+            <GradientDesc text={bio}></GradientDesc>
           </p>
           <DownloadResumeButton></DownloadResumeButton>
         </div>
       </div>
       <div className="w-3/4 py-5 md:w-1/2 h-full mx-auto">
         <div
-          data-aos="flip-up"
+          data-aos="zoom-in"
           className="w-fit mx-auto p-[3px] bg-gradient-to-br from-cyan-400 to-blue-700 h-[90%] rounded-full"
         >
           <img
-            data-aos="flip-up"
+            data-aos="zoom-in"
             className="h-full bg-slate-900 rounded-full mb-0 mx-auto"
             src={headerImagee}
             alt="Image"
