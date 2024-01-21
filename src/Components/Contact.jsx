@@ -67,7 +67,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-11/12 lg:w-8/12 mx-auto mb-5 border border-cyan-900 bg-slate-900 bg-opacity-30 rounded-lg text-white px-5 py-4"
+      className="w-11/12 lg:w-8/12 mx-auto my-8 border border-cyan-900 bg-slate-900 bg-opacity-30 rounded-lg text-white px-5 py-4"
     >
       <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
         <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">

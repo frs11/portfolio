@@ -7,7 +7,8 @@ import nodelogo from "../assets/Skills icons/nodejs.png";
 import expresslogo from "../assets/Skills icons/express with bg.png";
 import mongologo from "../assets/Skills icons/mongpdb.png";
 import firebaselogo from "../assets/Skills icons/firebase.png";
-import jwtlogo from "../assets/Skills icons/icons8-jwt.svg";
+// import jwtlogo from "../assets/Skills icons/icons8-jwt.svg";
+import nextjslogo from "../assets/Skills icons/next-js-icon-seeklogo.svg";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -40,21 +41,25 @@ const Skills = () => {
       title: "NodeJs",
     },
     {
-      logo: mongologo,
-      title: "MongoDB",
-    },
-    {
       logo: expresslogo,
       title: "ExpressJs",
+    },
+    {
+      logo: nextjslogo,
+      title: "NextJs",
+    },
+    {
+      logo: mongologo,
+      title: "MongoDB",
     },
     {
       logo: firebaselogo,
       title: "Firebase",
     },
-    {
-      logo: jwtlogo,
-      title: "JWT",
-    },
+    // {
+    //   logo: jwtlogo,
+    //   title: "JWT",
+    // },
   ];
   useEffect(() => {
     AOS.init({
@@ -72,7 +77,7 @@ const Skills = () => {
 
   return (
     <div id="skills" className="w-11/12 md:w-10/12 py-20 mx-auto">
-      <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
+      <p className="text-2xl md:text-4xl text-center my-2 md:mb-10 font-Orbitron font-medium text-cyan-300">
         <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
           <GradientText text={"Skills"}></GradientText>
         </span>

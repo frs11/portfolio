@@ -19,14 +19,14 @@ const Educations = () => {
   }, []);
 
   return (
-    <div className="w-11/12 md:w-10/12 pt-10 mx-auto">
-      <p className="text-2xl md:text-4xl text-center my-2 md:my-10 font-Orbitron font-medium text-cyan-300">
-        <span className=" border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
+    <div className="w-11/12 md:w-10/12 py-10 mx-auto">
+      <p className="text-2xl md:text-4xl text-center my-2 md:my-10 mb-10 font-Orbitron font-medium text-cyan-300">
+        <span className="border-b-2 border-cyan-300 px-2 py-1 rounded-lg">
           <GradientText text={"Educations"}></GradientText>
         </span>
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-4 w-10/12 lg:w-full lg:grid-cols-3 mx-auto py-8 bg-opacity-40 rounded-lg bg-slate-950">
+      <div className="w-10/12 lg:w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 mx-auto py-8 bg-opacity-60 border-2 border-dotted border-slate-800 rounded-lg bg-slate-950">
         {/* University */}
         <div className="px-5" data-aos="zoom-in">
           <p className="text-center text-cyan-300 border-b border-b-cyan-400 text-lg">
@@ -90,7 +90,7 @@ const Educations = () => {
         </div>
 
         {/* School */}
-        <div>
+        <div className="w-full md:w-[65%] lg:w-full mx-auto md:col-span-2 lg:col-auto">
           <div className="px-5" data-aos="zoom-in">
             <p className="text-center text-cyan-300 border-b border-b-cyan-400 text-lg">
               School

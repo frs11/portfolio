@@ -8,6 +8,12 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 
 const Home = () => {
+  // const horizontalLineStyle = "border-slate-700";
+  const horizontalLineStyle = (
+    <>
+      <hr className="border-slate-800" />
+    </>
+  );
   return (
     <div
       id="home"
@@ -15,11 +21,17 @@ const Home = () => {
     >
       <Navbar></Navbar>
       <Banner></Banner>
+      {horizontalLineStyle}
       <About></About>
+      {horizontalLineStyle}
       <Educations></Educations>
+      {horizontalLineStyle}
       <Skills></Skills>
+      {horizontalLineStyle}
       <Projects></Projects>
+      {horizontalLineStyle}
       <Contact></Contact>
+      {horizontalLineStyle}
       <Footer></Footer>
     </div>
   );
