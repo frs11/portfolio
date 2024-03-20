@@ -7,8 +7,10 @@ import nodelogo from "../assets/Skills icons/nodejs.png";
 import expresslogo from "../assets/Skills icons/express with bg.png";
 import mongologo from "../assets/Skills icons/mongpdb.png";
 import firebaselogo from "../assets/Skills icons/firebase.png";
-// import jwtlogo from "../assets/Skills icons/icons8-jwt.svg";
+import jwtlogo from "../assets/Skills icons/icons8-jwt.svg";
 import nextjslogo from "../assets/Skills icons/next-js-icon-seeklogo.svg";
+import reduxlogo from "../assets/Skills icons/redux.png";
+import typescriptlogo from "../assets/Skills icons/typescript.png";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
@@ -49,6 +51,14 @@ const Skills = () => {
       title: "NextJs",
     },
     {
+      logo: reduxlogo,
+      title: "Redux",
+    },
+    {
+      logo: typescriptlogo,
+      title: "TypeScript",
+    },
+    {
       logo: mongologo,
       title: "MongoDB",
     },
@@ -56,10 +66,10 @@ const Skills = () => {
       logo: firebaselogo,
       title: "Firebase",
     },
-    // {
-    //   logo: jwtlogo,
-    //   title: "JWT",
-    // },
+    {
+      logo: jwtlogo,
+      title: "JWT",
+    },
   ];
   useEffect(() => {
     AOS.init({

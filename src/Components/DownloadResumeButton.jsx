@@ -7,7 +7,7 @@ const DownloadResumeButton = () => {
 
     const link = document.createElement("a");
     link.href = googleDriveLink;
-    link.setAttribute("download", "resume.pdf");
+    link.setAttribute("download", "Fayezur Rahman's Resume.pdf");
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
